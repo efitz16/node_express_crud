@@ -15,9 +15,12 @@ var app = express();
 
 var datafile = require('./data/writers.json');
 
-app.set('writersData', datafile);
-
 app.set('port', process.env.PORT || 3000);
+app.set('writersData', datafile);
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
+app.locals.globalPageTitle = "Writers";
 
 app.use(express.static('./public'));
 app.use(require('./routes/index'));
