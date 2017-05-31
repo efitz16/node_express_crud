@@ -1,0 +1,25 @@
+{
+	"writers": [
+	{
+		"name" : "Vladimir Nabokov",
+		"birthday" : "April 22, 1899",
+		"placeOfBirth" : "Saint Petersburg, Russia",
+		"famousWorks" : ["Lolita", "Pale Fire", "Pnin", "Ada, or Ardor"],
+		"biography" : "Vladimir Vladimirovich Nabokov also known by the pen name Vladimir Sirin; 22 April [O.S. 10 April] 1899c – 2 July 1977) was a Russian-American novelist and entomologist. His first nine novels were in Russian, but he achieved international prominence after he began writing English prose."
+	},
+	{
+		"name" : "Charlotte Bronte",
+		"birthday" : "April 21, 1816",
+		"placeOfBirth" : "Yorkshire, England",
+		"famousWorks" : ["Villette", "Jane Eyre"],
+		"biography" : "Charlotte Brontë 21 April 1816 – 31 March 1855) was an English novelist and poet, the eldest of the three Brontë sisters who survived into adulthood and whose novels have become classics of English literature. She first published her works (including her best known novel, Jane Eyre) under the pen name Currer Bell."
+	},
+	{
+		"name" : "Philip Larkin",
+		"birthday" : "August 9, 1922",
+		"placeOfBirth" : "Coventry, United Kingdom",
+		"famousWorks" : ["High Windows", "The Whitsun Weddings", "A Girl in Winter"],
+		"biography" : "Philip Arthur Larkin (9 August 1922 – 2 December 1985) was an English poet, novelist and librarian. His first book of poetry, The North Ship, was published in 1945, followed by two novels, Jill (1946) and A Girl in Winter (1947), and he came to prominence in 1955 with the publication of his second collection of poems, The Less Deceived, followed by The Whitsun Weddings (1964) and High Windows (1974). He contributed to The Daily Telegraph as its jazz critic from 1961 to 1971, articles gathered in All What Jazz: A Record Diary 1961–71 (1985), and he edited The Oxford Book of Twentieth Century English Verse (1973).[1] His many honours include the Queen's Gold Medal for Poetry.[2] He was offered, but declined, the position of Poet Laureate in 1984, following the death of Sir John Betjeman."
+	}
+  ]
+}
