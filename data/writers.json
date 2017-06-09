@@ -2,6 +2,7 @@
 	"writers": [
 	{
 		"name" : "Vladimir Nabokov",
+		"shortname": "vladimir_nabokov",
 		"birthday" : "April 22, 1899",
 		"placeOfBirth" : "Saint Petersburg, Russia",
 		"famousWorks" : ["Lolita", "Pale Fire", "Pnin", "Ada, or Ardor"],
@@ -9,6 +10,7 @@
 	},
 	{
 		"name" : "Charlotte Bronte",
+		"shortname": "charlotte_bronte",
 		"birthday" : "April 21, 1816",
 		"placeOfBirth" : "Yorkshire, England",
 		"famousWorks" : ["Villette", "Jane Eyre"],
@@ -16,6 +18,7 @@
 	},
 	{
 		"name" : "Philip Larkin",
+		"shortname": "philip_larkin",
 		"birthday" : "August 9, 1922",
 		"placeOfBirth" : "Coventry, United Kingdom",
 		"famousWorks" : ["High Windows", "The Whitsun Weddings", "A Girl in Winter"],
