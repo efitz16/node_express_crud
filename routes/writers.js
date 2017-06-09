@@ -2,20 +2,33 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/writers', function(request, response) {
-  var info = '';
-  var datafile = request.app.get('writersData');
-  datafile.writers.forEach(function(item) {
-    info += `
-      <li><h2>${item.name}</h2>
-        <p>${item.biography}</p>
-      </li>
-    `;
+  // var info = '';
+  // var datafile = request.app.get('writersData');
+  // datafile.writers.forEach(function(item) {
+  //   info += `
+  //     <li><h2>${item.name}</h2>
+  //       <p>${item.biography}</p>
+  //     </li>
+  //   `;
+  // });
+  // response.send(`
+  // 	<h1>Writers</h1>
+  // 	${info}
+  //   <script src="/reload/reload.js"></script>
+  // 	`);
+
+  var data = request.app.get('writersData');
+  // var writersPhotos = [];
+
+  // data.writers.forEach(function(item){
+  //  writersPhotos = writersPhotos.concat(item.photo);
+  // })
+
+  response.render('writers', {
+    pageTitle: 'Writers',
+    pageId: 'writers'
+    // photo: writersPhotos
   });
-  response.send(`
-  	<h1>Writers</h1>
-  	${info}
-    <script src="/reload/reload.js"></script>
-  	`);
 });
 
 router.get('/writers/:writerid', function(request, response) {

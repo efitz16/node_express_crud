@@ -21,6 +21,7 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 app.locals.globalPageTitle = "Writers";
+app.locals.pageWriters = datafile.writers;
 
 app.use(express.static('./public'));
 app.use(require('./routes/index'));

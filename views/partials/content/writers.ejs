@@ -1,0 +1,12 @@
+<% pageWriters.forEach(function(item, idx) { %>
+  <div>
+    <% if (pageId !== 'home') { %>
+      <h2><%= item.name %></h2>
+    <% } else { %>
+      <a href="/writers/<%= idx %>"><h2><%= item.name %></a></h2>
+    <% } %>
+     <% if (pageId !== 'home') { %>
+       <p><%= item.biography %></p>
+     <% } %>
+  </div>
+<% }); %>

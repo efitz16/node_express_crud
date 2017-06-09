@@ -6,14 +6,15 @@
 <body id="<%= pageId %>">
  
   <h1><%= globalPageTitle %>--<%= pageTitle %></h1>
-
   <% include partials/content/maincontent.ejs %>
+  <div>
+    <% include partials/content/writers.ejs %>
+  </div>
 
 <!-- <% if(typeof artwork !== "undefined") { %>
   <script src="js/pixlgrid.js"></script>
 	
 <% } %> -->
-<script src="/reload/reload.js"></script>
 
 <% include partials/template/jsdefaluts.ejs %>
 
