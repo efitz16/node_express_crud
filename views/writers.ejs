@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<% include partials/template/head.ejs %>
+  <% include partials/template/head.ejs %>
 </head>
 <body id="<%= pageId %>">
  
   <h1><%= globalPageTitle %>--<%= pageTitle %></h1>
 
-  <% include partials/content/maincontent.ejs %>
+  <% include partials/content/writers.ejs %>
 
 <!-- <% if(typeof artwork !== "undefined") { %>
   <script src="js/pixlgrid.js"></script>
-	
+  
 <% } %> -->
-<script src="/reload/reload.js"></script>
 
 <% include partials/template/jsdefaluts.ejs %>
 
