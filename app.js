@@ -9,7 +9,7 @@
 // myServer.listen(3000);
 // console.log("this is running");
 var express = require('express');
-var reload = require('reload');
+var reload = require('reload'); 
 
 var app = express();
 
@@ -26,6 +26,8 @@ app.locals.pageWriters = datafile.writers;
 app.use(express.static('./public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/writers'));
+app.use(require('./routes/feedback'));
+app.use(require('./routes/api'));
 
 var server = app.listen(app.get('port'), function() {
   console.log("listening on port " + app.get('port'));
