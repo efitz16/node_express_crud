@@ -3,10 +3,23 @@
 <head>
 	<% include partials/template/head.ejs %>
 </head>
-<body>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-<h1><%= globalPageTitle %></h1>
-<script src="/reload/reload.js"></script>
+<body id="<%= pageId %>">
+<header>
+	<% include partials/template/headers.ejs %>
+</header>
+ 
+  <h1><%= globalPageTitle %>--<%= pageTitle %></h1>
+  <% include partials/content/maincontent.ejs %>
+  <div>
+    <% include partials/content/writers.ejs %>
+  </div>
+
+<!-- <% if(typeof artwork !== "undefined") { %>
+  <script src="js/pixlgrid.js"></script>
+	
+<% } %> -->
+
+<% include partials/template/jsdefaluts.ejs %>
 
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include partials/template/head.ejs %>
+</head>
+<body id="<%= pageId %>">
+<header>
+  <% include partials/template/headers.ejs %>
+</header>
+<div>
+ <form class="feedback-form">
+   <label>
+     <input type="text" id="feedback-form-name" placeholder="Please enter your name">
+   </label>
+   <label>
+     <textarea rows="6" id="feedback-form-message"></textarea>
+   </label>
+   <button type="submit">Submit</button>
+ </form>
+ </div>
+ <div>
+ 	<h3>Recent feedback</h3>
+ 	<div class="fedback-messages"></div>
+ </div>
+
+<% include partials/template/jsdefaluts.ejs %>
+
+</body>
+</html>
