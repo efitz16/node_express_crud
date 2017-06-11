@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/efitz16/node_express_crud#readme",
   "dependencies": {
-    "body-parser": "^1.17.2"
+    "body-parser": "^1.17.2",
+    "socket.io": "^2.0.2"
   }
 }
