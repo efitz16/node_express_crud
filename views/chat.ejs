@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include partials/template/head.ejs %>
+</head>
+<body id="<%= pageId %>">
+<header>
+  <% include partials/template/headers.ejs %>
+</header>
+  <form name="chatForm" class="chat-form">
+    <div>
+      <label for="chat-username">Name</label>
+      <input type="text" id="chat-username" required placeholder="Enter your name">
+    </div>
+    <div>
+      <label for="chat-message">Name</label>
+      <input type="text" id="chat-message" required placeholder="Enter a message">
+    </div>
+    <button id="chat-submit" type="Submit">Submit</button>
+  </form>
+  <div class="chat-display">
+    <p class="chat-text">Welcome. Add your message above.</p>
+    
+  </div>
+
+<% include partials/template/jsdefaluts.ejs %>
+
+</body>
+</html>
