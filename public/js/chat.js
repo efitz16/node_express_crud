@@ -10,12 +10,15 @@ socket.on('connect', function(){
     chatForm.addEventListener('submit', function(e) {
     	e.preventDefault();
     
-      showMessage({
+      socket.emit('postMessage', {
         username: chatUsername.value,
         message: chatMessage.value
       });
       chatMessage.value = "";
       chatMessage.focus();  
+    });
+    socket.on('updateMessages', function(data) {
+      showMessage(data);
     });
   }
 

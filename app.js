@@ -37,6 +37,9 @@ io.attach(server);
 
 io.on('connection', function(socket) {
   console.log('User connected');
+  socket.on('postMessage', function(data) {
+    io.emit('updateMessages', data);
+  });
 });
 
 reload(server, app);
